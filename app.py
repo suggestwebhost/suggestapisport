@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 
 # Core endpoint targeting configuration
-API_KEY = os.environ.get("SPORTS_DB_KEY", "3")
+API_KEY = os.environ.get("SPORTS_DB_KEY")
 THE_SPORTS_DB_BASE_URL = f"https://www.thesportsdb.com/api/v1/json/{API_KEY}"
 
 def fetch_team_data(team_name):
